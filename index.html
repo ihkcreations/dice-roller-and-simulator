@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8">  
   <title>Dice Roller and Simulator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="app-container">
     <header class="app-header">
-      <h1>Dice Studio</h1>
+      <h1>Dice Studio</h1>  
       <p>Configure, roll, and simulate dice probabilities</p>
     </header>
     <div class="workspace">
       <section class="panel config-panel">
         <h2>Configuration</h2>
         <div class="control-group">
-          <label for="dice-type">Dice Type</label>
+          <label for="dice-type">Dice Type</label>  
           <select id="dice-type">
             <option value="4">D4</option>
             <option value="6" selected>D6</option>
             <option value="8">D8</option>
             <option value="10">D10</option>
             <option value="12">D12</option>
-            <option value="20">D20</option>
+            <option value="20">D20</option>  
             <option value="100">D100</option>
           </select>
         </div>
         <div class="control-group">
           <label for="dice-count">Number of Dice</label>
           <input type="number" id="dice-count" value="2" min="1" max="10">
-        </div>
+        </div>  
         <div class="control-group">
           <label for="dice-modifier">Modifier</label>
           <input type="number" id="dice-modifier" value="0" min="-50" max="50">
         </div>
         <div class="action-group">
           <button id="roll-btn" class="btn primary">Roll Dice</button>
-          <button id="sim-btn" class="btn secondary">Run 1000 Simulations</button>
+          <button id="sim-btn" class="btn secondary">Run 1000 Simulations</button>  
         </div>
       </section>
       <section class="panel output-panel">
         <h2>Roll Result</h2>
         <div id="dice-stage" class="dice-stage">
           <p class="placeholder-text">Click roll dice to begin</p>
-        </div>
+        </div>  
         <div class="result-summary">
           <div class="sum-box">
             <span class="label">Total</span>
             <span id="total-value" class="value">-</span>
           </div>
           <div class="sum-box">
-            <span class="label">Breakdown</span>
+            <span class="label">Breakdown</span>  
             <span id="breakdown-value" class="value">-</span>
           </div>
         </div>
         <div class="history-container">
           <h3>History</h3>
           <ul id="history-list"></ul>
-        </div>
+        </div>  
       </section>
       <section class="panel sim-panel">
         <h2>Simulation Analysis</h2>
         <div id="chart-container" class="chart-container">
           <p class="placeholder-text">Run simulation to see distribution chart</p>
         </div>
-      </section>
+      </section>  
     </div>
   </main>
   <script src="script.js"></script>
 </body>
 </html>
+
+
